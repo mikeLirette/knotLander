@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TheKnot.com Landing Page</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="container text-center">
+    <h1><img src="img/siteLogo.png" width="200px"></h1>
+    <h5>story telling imagery</h5>
+  </div>
+</header>
+
+
+<section class="slider">
+    <div class="container">
+      <div class="slideInner">
+        <ul class="slideContain">
+          <li><img src="img/E0005.jpg" class="sliderImg"></li>
+          <li><img src="img/w1020.jpg" class="sliderImg"></li>
+          <li><img src="img/w0010.jpg" class="sliderImg"></li>
+          <li><img src="img/w0439.jpg" class="sliderImg"></li>
+          <li><img src="img/W0157.jpg" class="sliderImg"></li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+
+<section class="info">
+  <div class="container padIt doubleLine">
+    <div class="two--lg">
+      <div class="text--inner">
+        <p><strong>Wedding Day Photography</strong></p>
+        <p>6 Hours of wedding day coverage</p>
+        <p>Digital download of high resolution images with print release</p>
+        <p>Online image proofing and purchasing</p>
+        <p>$2,650</p>
+        <br>
+        <p><strong>Add-ons</strong></p>
+        <p>Portrait session (engagement, bridal, etc.) $300</p>
+        <p>Additional coverage hours on wedding day $350</p>
+        <p>Additional photographer $100 per hour (4 hour minimum)</p>
+        <p>Custom USB drive of your high resolution images $300</p>
+        <p>Guest book from portrait session images $325</p>
+        <p>Wedding albums starting at $850</p>
+      </div>
+    </div>
+    <div class="one--lg text-right">
+      <div class="text--inner">
+        <p><strong>Check date availability</strong></p>
+        <form name="sentMessage" id="contactForm" novalidate>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>First name</label>
+                                        <input type="text" class="form-control" id="firstName" required data-validation-required-message="Please enter your first name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Last name</label>
+                                        <input type="text" class="form-control" id="lastName" required data-validation-required-message="Please enter your last name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Email address</label>
+                                        <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Phone number</label>
+                                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+
+                                <div class="row control-group">
+                                	<div class="form-group col-xs-12 floating-label-form-group controls">
+                                    	<label>Wedding date</label>
+                                        	<div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+            									<input size="16" type="date" class="form-control" id="date" required data-validation-required-message="Please enter your wedding date.">
+           										<span class="add-on"><i class="icon-th"></i></span>
+                                                <p class="help-block text-danger"></p>
+        									</div>
+                                    </div>
+                                </div>
+
+                                <div class="row control-group">
+                                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                                        <label>Message</label>
+                                        <input type="text" class="form-control" id="message" required data-validation-required-message="Please enter your wedding details.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+
+                                <div id="success"></div>
+                                <div class="row">
+                                <br>
+                                    <div class="form-group col-xs-12">
+                                        <button type="submit" class="btn btn-success btn-lg">Send!</button>
+                                    </div>
+                                </div>
+                            </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="">
+  <div class="container padIt">
+    <ul class="footNav">
+      <li><a href="http://redleafweddings.pixieset.com/guestlogin/sample/">View Sample, Complete Weddings</a></li>
+      <li><a href="http://www.redleafweddings.com">Visit our website</a></li>
+      <li>Call us <a href="tel:+5044027692"</a>504-402-7692</li>
+    </ul>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/contact_me.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script>
+      $(document).ready(makespace);
+      $(window).resize(makespace);
+      function makespace(){
+        var setHeight = $(".sliderImg").height();
+        $(".slider").height(setHeight);
+      }
+  </script>
+
+
+</body>
